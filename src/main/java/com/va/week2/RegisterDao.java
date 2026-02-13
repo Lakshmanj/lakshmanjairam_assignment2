@@ -13,6 +13,11 @@ public class RegisterDao {
 	 * Write the methods for CRUD operation..
 	 */
 
+
+
+//	sql command for checking what is in the SQL database via the terminal:
+	//	mysql -u lakshmanjairam_cpan368 -p -e "SELECT * FROM cpan368.Users;"
+
 	private String dbUrl = "jdbc:mysql://10.252.245.61:3306/cpan368"; // ipaddr command used in terminal in VM to obtain the IP used
 	private String dbUname = "lakshmanjairam_cpan368";
 	private String dbPassword = "class123";
