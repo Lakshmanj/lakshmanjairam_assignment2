@@ -13,7 +13,7 @@ public class RegisterDao {
 	 * Write the methods for CRUD operation..
 	 */
 
-	private String dbUrl = "jdbc:mysql://10.0.0.128:3306/cpan368"; // ipaddr command used in terminal in VM to obtain the IP used
+	private String dbUrl = "jdbc:mysql://10.252.245.61:3306/cpan368"; // ipaddr command used in terminal in VM to obtain the IP used
 	private String dbUname = "lakshmanjairam_cpan368";
 	private String dbPassword = "class123";
 	private String dbDriver = "com.mysql.cj.jdbc.Driver";
@@ -64,7 +64,7 @@ public class RegisterDao {
 		return result;
 	}
 
-	// METHOD 2: SELECT (Updated to fetch Real User Data)
+	// SELECT fetches real user data
 	public List<RegisterForm> getAllUsers() {
 		loadDriver(dbDriver);
 		Connection con = getConnection();
